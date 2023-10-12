@@ -1,0 +1,53 @@
+:root {
+    font-family: Arial;
+    color: #161e1e;
+    background-color: #f9fafb;
+}
+
+.container {
+    position: relative;
+
+    max-width: 800px;
+    margin: 200px auto;
+}
+
+button {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+    
+    border: none;
+    border-radius: 15px;
+    background-color: #e84a5f;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #f16376;
+}
+button:active {
+    background-color: #f3475e;
+}
+
+#spoiler {
+    overflow: hidden;
+
+    text-align: center;
+    font-size: 22px;
+    
+    border-radius: 15px;
+    background-color: #feceab;
+
+    transform: scale(1,0);
+    transition: all 1s;
+    transform-origin: center top;
+    
+}
+#spoiler.open {
+    padding: 100px 20px 10px;
+    transform: scale(1,1);
+}
